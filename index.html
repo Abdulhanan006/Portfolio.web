@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium Portfolio Home</title>
+    <meta name="description" content="Portfolio showcasing top projects and services with an animated hero slider.">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <header class="navbar">
+        <div class="logo"><span>Portfolio</span></div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#portfolio">Work</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <button class="nav-cta">Get in Touch</button>
+    </header>
+
+    <main id="main-content">
+        <section class="hero-slider" aria-label="Featured Projects" id="home">
+            <div class="slider-container" id="slider-container">
+                <!-- Slides will be injected dynamically here by javascript -->
+            </div>
+
+            <div class="slider-controls">
+                <button class="control-btn prev-btn" id="prev-btn" aria-label="Previous slide">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M15 18l-6-6 6-6" />
+                    </svg>
+                </button>
+                <button class="control-btn next-btn" id="next-btn" aria-label="Next slide">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M9 18l6-6-6-6" />
+                    </svg>
+                </button>
+            </div>
+
+            <div class="slider-indicators" id="slider-indicators" role="tablist">
+                <!-- Dots will be injected dynamically here -->
+            </div>
+        </section>
+
+        <!-- Full Stack Services Section -->
+        <section id="services" class="content-section">
+            <div class="container">
+                <h2>Full Stack Developer</h2>
+                <p class="subtitle">I specialize in both Frontend and Backend development, delivering end-to-end digital solutions.</p>
+
+                <div class="feature-grid">
+                    <div class="feature-card">
+                        <img src="assets/images/frontend_dev_service_1775838748159.png" alt="Frontend Development" class="feature-img">
+                        <div class="feature-content">
+                            <h3>Frontend Development</h3>
+                            <p>Crafting sleek, responsive, and vibrant user interfaces using modern web frameworks.</p>
+                        </div>
+                    </div>
+                    <div class="feature-card">
+                        <img src="assets/images/backend_dev_service_1775838989452.png" alt="Backend Development" class="feature-img">
+                        <div class="feature-content">
+                            <h3>Backend Architecture</h3>
+                            <p>Building robust, scalable, and secure server-side applications and databases.</p>
+                        </div>
+                    </div>
+                    <div class="feature-card">
+                        <img src="assets/images/fullstack_dev_service_1775839047696.png" alt="Full Stack Integration" class="feature-img">
+                        <div class="feature-content">
+                            <h3>Full Stack Systems</h3>
+                            <p>Seamlessly integrating APIs and data flow across complex application landscapes.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="content-section contact-section">
+            <div class="container">
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <h2>Let's build something amazing together.</h2>
+                        <p class="subtitle">I'm <strong>Abdul Hanan Bhatti</strong>, a passionate and detail-oriented Full Stack Developer. I build top-tier, scalable web applications that elevate business performance and provide best-in-class user experiences.</p>
+                        
+                        <div class="contact-details">
+                            <p><strong>Email:</strong> contact@abdulhanan.dev</p>
+                            <p><strong>Availability:</strong> Open to exceptional opportunities</p>
+                            <p><strong>Location:</strong> Global / Remote</p>
+                        </div>
+                    </div>
+                    
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <input type="text" placeholder="Your Name" required aria-label="Your Name">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Your Email" required aria-label="Your Email">
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Tell me about your project..." rows="5" required aria-label="Your Project Details"></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn" aria-label="Send Message">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
